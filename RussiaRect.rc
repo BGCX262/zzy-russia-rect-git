@@ -1,0 +1,491 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (P.R.C.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\RussiaRect.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.chs\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\RussiaRect.ico"
+IDR_RUSSIATYPE          ICON    DISCARDABLE     "res\\RussiaRectDoc.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_MAINFRAME           BITMAP  MOVEABLE PURE   "res\\Toolbar.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_MAINFRAME TOOLBAR DISCARDABLE  16, 15
+BEGIN
+    BUTTON      IDM_GameStart
+    BUTTON      IDM_GamePause
+    BUTTON      IDM_GameEnd
+    SEPARATOR
+    BUTTON      IDM_Connect
+    BUTTON      IDM_Request
+    BUTTON      IDM_ShowIP
+    SEPARATOR
+    BUTTON      IDM_UserHelp
+    BUTTON      IDM_GameExit
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU PRELOAD DISCARDABLE 
+BEGIN
+    POPUP "单机游戏"
+    BEGIN
+        MENUITEM "单人模式",                    IDM_OnePlayer
+        MENUITEM "双人游戏",                    IDM_TwoPlayers
+        MENUITEM SEPARATOR
+        MENUITEM "退出(&X)",                    IDM_GameExit
+    END
+    POPUP "联机对战"
+    BEGIN
+        MENUITEM "建立网络连接",                IDM_Connect
+        MENUITEM "请求对战",                    IDM_Request
+        MENUITEM SEPARATOR
+        MENUITEM "查看本机IP",                  IDM_ShowIP
+    END
+    POPUP "操作"
+    BEGIN
+        MENUITEM "开始",                        IDM_GameStart
+        MENUITEM "暂停",                        IDM_GamePause
+        MENUITEM "结束",                        IDM_GameEnd
+        MENUITEM SEPARATOR
+    END
+    POPUP "设置"
+    BEGIN
+        POPUP "风格选择"
+        BEGIN
+            MENUITEM "有网格线",                    IDM_GRID
+            MENUITEM "无网格线",                    IDM_NOGRID
+        END
+        POPUP "音乐选择"
+        BEGIN
+            POPUP "选择背景音乐"
+            BEGIN
+                MENUITEM "音乐1:天空之城",              IDM_ONMUSIC1
+                MENUITEM "音乐2:幽灵公主",              IDM_ONMUSIC2
+                MENUITEM "音乐3:轩辕剑",                IDM_ONMUSIC3
+                MENUITEM "音乐4:泡泡堂",                IDM_ONMUSIC4
+                MENUITEM "音乐5:铃儿响叮当",            IDM_ONMUSIC5
+            END
+            MENUITEM "关闭背景音乐",                IDM_MUSIC_OFF
+        END
+        POPUP "难度选择"
+        BEGIN
+            MENUITEM "难度 1 :入门级",              IDM_LEVEL_1
+            MENUITEM "难度2 : 初级",                IDM_LEVEL_2
+            MENUITEM "难度 3 :中级",                IDM_LEVEL_3
+            MENUITEM "难度 4 : 高级",               IDM_LEVEL_4
+            MENUITEM "难度 5 : 专家级",             IDM_LEVEL_5
+        END
+    END
+    POPUP "帮助(&H)"
+    BEGIN
+        MENUITEM "关于 RussiaRect(&A)...",      ID_APP_ABOUT
+        MENUITEM "使用帮助",                    IDM_UserHelp
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS PRELOAD MOVEABLE PURE 
+BEGIN
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL
+    "S",            ID_FILE_SAVE,           VIRTKEY, CONTROL
+    "Z",            ID_EDIT_UNDO,           VIRTKEY, CONTROL
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL
+    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY, ALT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, SHIFT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY 
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 240, 67
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于 RussiaRect"
+FONT 9, "宋体"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,21,21
+    LTEXT           "RussiaRect 1.0 版",IDC_STATIC,40,10,119,8,SS_NOPREFIX
+    LTEXT           "版权所有 (C) 2007",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "确定",IDOK,183,7,50,14,WS_GROUP
+    LTEXT           "by:Justice@CS0304,HUST",IDC_STATIC,39,39,119,10
+END
+
+IDD_DIALOG1 DIALOG DISCARDABLE  0, 0, 232, 161
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "联机操作"
+FONT 10, "System"
+BEGIN
+    DEFPUSHBUTTON   "进入联机模式",IDOK,36,131,50,14
+    PUSHBUTTON      "退出联机模式",IDCANCEL,126,132,50,14
+    GROUPBOX        "选择连接方式",IDC_STATIC,53,15,120,83,BS_CENTER
+    CONTROL         "建立服务器",IDC_RADIO1,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,77,27,65,14
+    CONTROL         "建立客户机",IDC_RADIO2,"Button",BS_AUTORADIOBUTTON,79,
+                    42,67,17
+    LTEXT           "输入服务器IP :",IDC_STATIC,79,61,66,12
+    CONTROL         "IPAddress1",IDC_IP_HOST,"SysIPAddress32",WS_TABSTOP,70,
+                    79,82,13
+    PUSHBUTTON      "显示本机IP",IDM_ShowIP,80,107,53,16
+END
+
+IDD_DIALOG2 DIALOG DISCARDABLE  0, 0, 220, 165
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "使用帮助"
+FONT 10, "System"
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,84,144,50,14
+    GROUPBOX        "操作说明",IDC_STATIC,17,13,188,129,BS_CENTER
+    GROUPBOX        "左边键位",IDC_STATIC,23,29,84,103
+    GROUPBOX        "右边键位",IDC_STATIC,115,30,84,103
+    LTEXT           "旋转-----------W 键",IDC_STATIC,33,51,69,10
+    LTEXT           "左移-----------A 键",IDC_STATIC,33,66,69,11
+    LTEXT           "右移-----------D 键",IDC_STATIC,33,79,69,10
+    LTEXT           "下移-----------S 键",IDC_STATIC,33,93,69,11
+    LTEXT           "旋转-----------UP 键",IDC_STATIC,122,49,71,8
+    LTEXT           "左移----------LEFT 键",IDC_STATIC,122,63,71,8
+    LTEXT           "右移----------RIGHT 键",IDC_STATIC,122,78,71,8
+    LTEXT           "下移----------DOWN 键",IDC_STATIC,122,92,71,8
+    LTEXT           "落下----------NUM0 键",IDC_STATIC,122,104,71,10
+    LTEXT           "落下----------SPACE键 ",IDC_STATIC,33,106,69,9
+END
+
+IDD_DIALOG3 DIALOG DISCARDABLE  0, 0, 175, 76
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "离开"
+FONT 10, "System"
+BEGIN
+    DEFPUSHBUTTON   "当然",ID_APP_EXIT,32,32,50,14
+    PUSHBUTTON      "逗你玩",IDCANCEL,99,32,50,14
+    GROUPBOX        "真的要退出游戏?",IDC_STATIC,17,15,142,48,BS_CENTER | 
+                    BS_NOTIFY
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404b0"
+        BEGIN
+            VALUE "Comments", "\0"
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "RussiaRect Microsoft 基础类应用程序\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "RussiaRect\0"
+            VALUE "LegalCopyright", "版权所有 (C) 2007\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "RussiaRect.EXE\0"
+            VALUE "PrivateBuild", "\0"
+            VALUE "ProductName", "RussiaRect 应用程序\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+            VALUE "SpecialBuild", "\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 233
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 60
+    END
+
+    IDD_DIALOG1, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 225
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 154
+    END
+
+    IDD_DIALOG2, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 213
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 158
+    END
+
+    IDD_DIALOG3, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 168
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 69
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDP_SOCKETS_INIT_FAILED "Windows 通信端口初始化失败。"
+END
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    IDR_MAINFRAME           "RussiaRect\n\nRussia\n\n\nRussiaRect.Document\nRussia Document"
+END
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    AFX_IDS_APP_TITLE       "RussiaRect"
+    AFX_IDS_IDLEMESSAGE     "就绪"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_INDICATOR_EXT        "扩展名"
+    ID_INDICATOR_CAPS       "大写"
+    ID_INDICATOR_NUM        "数字"
+    ID_INDICATOR_SCRL       "滚动"
+    ID_INDICATOR_OVR        "改写"
+    ID_INDICATOR_REC        "记录"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_NEW             "建立新文档\n新建"
+    ID_FILE_OPEN            "打开一个现有文档\n打开"
+    ID_FILE_CLOSE           "关闭活动文档\n关闭"
+    ID_FILE_SAVE            "保存活动文档\n保存"
+    ID_FILE_SAVE_AS         "将活动文档以一个新文件名保存\n另存为"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_APP_ABOUT            "显示程序信息，版本号和版权\n关于"
+    ID_APP_EXIT             "退出应用程序；提示保存文档\n退出"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_MRU_FILE1       "打开该文档"
+    ID_FILE_MRU_FILE2       "打开该文档"
+    ID_FILE_MRU_FILE3       "打开该文档"
+    ID_FILE_MRU_FILE4       "打开该文档"
+    ID_FILE_MRU_FILE5       "打开该文档"
+    ID_FILE_MRU_FILE6       "打开该文档"
+    ID_FILE_MRU_FILE7       "打开该文档"
+    ID_FILE_MRU_FILE8       "打开该文档"
+    ID_FILE_MRU_FILE9       "打开该文档"
+    ID_FILE_MRU_FILE10      "打开该文档"
+    ID_FILE_MRU_FILE11      "打开该文档"
+    ID_FILE_MRU_FILE12      "打开该文档"
+    ID_FILE_MRU_FILE13      "打开该文档"
+    ID_FILE_MRU_FILE14      "打开该文档"
+    ID_FILE_MRU_FILE15      "打开该文档"
+    ID_FILE_MRU_FILE16      "打开该文档"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_NEXT_PANE            "切换到下一个窗格\n下一窗格"
+    ID_PREV_PANE            "切换回前一个窗格\n前一窗格"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_WINDOW_SPLIT         "将活动的窗口分隔成窗格\n分隔"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_EDIT_CLEAR           "删除被选对象\n删除"
+    ID_EDIT_CLEAR_ALL       "全部删除\n全部删除"
+    ID_EDIT_COPY            "复制被选对象并将其置于剪贴板上\n复制"
+    ID_EDIT_CUT             "剪切被选对象并将其置于剪贴板上\n剪切"
+    ID_EDIT_FIND            "查找指定的正文\n查找"
+    ID_EDIT_PASTE           "插入剪贴板内容\n粘贴"
+    ID_EDIT_REPEAT          "重复上一步操作\n重复"
+    ID_EDIT_REPLACE         "用不同的正文替换指定的正文\n替换"
+    ID_EDIT_SELECT_ALL      "选择整个文档\n选择全部"
+    ID_EDIT_UNDO            "撤消最后一步操作\n撤消"
+    ID_EDIT_REDO            "重新执行先前已撤消的操作\n重新执行"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_VIEW_TOOLBAR         "显示或隐藏工具栏\n显隐工具栏"
+    ID_VIEW_STATUS_BAR      "显示或隐藏状态栏\n显隐状态栏"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCSIZE          "改变窗口大小"
+    AFX_IDS_SCMOVE          "改变窗口位置"
+    AFX_IDS_SCMINIMIZE      "将窗口缩小成图标"
+    AFX_IDS_SCMAXIMIZE      "把窗口放大到最大尺寸"
+    AFX_IDS_SCNEXTWINDOW    "切换到下一个文档窗口"
+    AFX_IDS_SCPREVWINDOW    "切换到先前的文档窗口"
+    AFX_IDS_SCCLOSE         "关闭活动的窗口并提示保存所有文档"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCRESTORE       "把窗口恢复到正常大小"
+    AFX_IDS_SCTASKLIST      "激活任务表"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDM_GameStart           "开始游戏"
+    IDM_GamePause           "暂停游戏"
+    IDM_GameEnd             "结束游戏"
+END
+
+#endif    // Chinese (P.R.C.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE 4, 2
+#pragma code_page(936)
+#endif //_WIN32
+#include "res\RussiaRect.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.chs\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

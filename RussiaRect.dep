@@ -1,0 +1,55 @@
+# Microsoft Developer Studio Generated Dependency File, included by RussiaRect.mak
+
+.\ConnectDlg.cpp : \
+	".\ConnectDlg.h"\
+	".\RussiaRect.h"\
+	
+
+.\GameExitDlg.cpp : \
+	".\GameExitDlg.h"\
+	".\RussiaRect.h"\
+	
+
+.\MainFrm.cpp : \
+	".\MainFrm.h"\
+	".\RussiaRect.h"\
+	
+
+.\RussiaRect.cpp : \
+	".\MainFrm.h"\
+	".\RussiaRect.h"\
+	".\RussiaRectDoc.h"\
+	".\RussiaRectView.h"\
+	".\StdAfx.h"\
+	
+
+.\RussiaRect.rc : \
+	".\res\RussiaRect.ico"\
+	".\res\RussiaRect.rc2"\
+	".\res\RussiaRectDoc.ico"\
+	".\res\Toolbar.bmp"\
+	
+
+.\RussiaRectDoc.cpp : \
+	".\RussiaRect.h"\
+	".\RussiaRectDoc.h"\
+	".\StdAfx.h"\
+	
+
+.\RussiaRectView.cpp : \
+	".\ConnectDlg.h"\
+	".\GameExitDlg.h"\
+	".\RussiaRect.h"\
+	".\RussiaRectDoc.h"\
+	".\RussiaRectView.h"\
+	".\UserHelp.h"\
+	
+
+.\StdAfx.cpp : \
+	".\StdAfx.h"\
+	
+
+.\UserHelp.cpp : \
+	".\RussiaRect.h"\
+	".\UserHelp.h"\
+	
